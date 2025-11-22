@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - YayMovies</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">YayMovies</div>
+    <nav>
+      <a href="#now-showing">Now Showing</a>
+      <a href="#coming-soon">Coming Soon</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Movie Info -->
+    <div class="movie-info">
+      <img src="#" alt="Movie Poster (Placeholder)">
+      <div class="movie-details">
+        <h2 id="movie-title">Good Boy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Ticket and Price -->
+    <div class="booking-section">
+      <div class="ticket-info">
+        <h1>One Ticket</h1>
+      </div>
+      <div class="total-price">
+        ₱<span id="ticket-price">590.00</span>
+      </div>
+    </div>
+
+    <!-- Seat and Name Input -->
+    <div class="form-section">
+      <div class="seat-section">
+        <label for="seat">Select Seat:</label>
+        <select id="seat">
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="A3">A3</option>
+        </select>
+      </div>
+
+      <div class="input-section">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" placeholder="Your name">
+      </div>
+    </div>
+
+    <button class="submit-btn" onclick="storeBooking()">Confirm Booking</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
